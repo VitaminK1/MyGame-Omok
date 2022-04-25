@@ -1,0 +1,2 @@
+# MyGame-Omok
+gomoku game
