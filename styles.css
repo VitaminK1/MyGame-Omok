@@ -1,0 +1,151 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 200%;
+    font: inherit;
+    vertical-align: middle;
+    text-align: center;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+button, #submit {
+    border: 1px solid #777;
+    background: #6e9e2d;
+    color: #fff;
+    padding: 5px 30px;
+    cursor: pointer;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+#title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding : 10px 10px 15px 10px;
+    display: block;
+    background: linear-gradient(90deg, #fdcd3b 60%, #ffed4b 60%);
+    width: 1000px;
+}
+
+#game-panel {
+    display: block;
+    width: 1000px;
+    margin: 10px;
+    position: relative;
+}
+
+#map-initializer-form {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 10px 10px 10px;
+    width: 200px;
+    background-color: #fdcd3b;
+    margin: 10px 400px;
+    display: block;
+}
+
+#map-initializer-form div{
+    padding: 5px 5px 5px 5px;
+}
+
+#map-initializer-form #submitP {
+    padding: 5px 5px 5px 20px;
+}
+
+#score-board {
+    border: 1px solid black;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 38px;
+    margin: 10px 10px;
+
+}
+
+#game-msg {
+    position: absolute;
+    left: 420px;
+}
+
+#backboard {
+    position: absolute;
+    top:70px;
+    left:0;
+    padding: 10px 5px;
+    margin: 10px 0;
+}
+#map {
+    display: inline-block;
+    align-content: center;
+    position: absolute;
+    top:70px;
+    left:0;
+    padding: 10px 5px;
+    margin: 10px 0;
+}
+
+#map .row {
+    display: flex;
+    flex-direction: row;
+}
+
+#map .row .cell {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+#map #marker {
+    display: none;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    pointer-events: none;
+}

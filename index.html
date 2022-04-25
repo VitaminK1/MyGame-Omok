@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title"> Omok v0.1 </h1>
+    <form id="map-initializer-form">
+        <div>
+        <label for="width">  Width : </label> <span id="widthValue">10</span><br>
+            <input id="width" name="width" type="range" step="1" min="10" max="19" value="10"
+                   oninput="document.getElementById('widthValue').innerHTML=this.value;">
+        </div>
+        <div>
+        <label for="height">  Height : </label> <span id="heightValue">10</span><br>
+            <input id="height" name="height" type="range" step="1" min="10" max="19" value="10"
+                   oninput="document.getElementById('heightValue').innerHTML=this.value;">
+        </div>
+        <div>  First :
+            <input id="Black" name="first" type="radio" value="Black" checked><label for="Black"> ● </label>
+            <input id="White" name="first" type="radio" value="White"><label for="White"> ○ </label>
+        </div>
+        <div id="submitP">
+            <input id="submit" type="submit" name="mapInit" value="Start!">
+        </div>
+    </form>
+    <div id="game-panel">
+        <div id="score-board">
+            <button id="restart" name="restart">Restart!</button>
+            <span id="game-msg">Submit form above first.</span>
+            <span id="time-elapsed" >00 : 00 : 00</span>
+        </div>
+        <canvas id="backboard"></canvas>
+        <div id="map"></div>
+    </div>
+</body>
+<script src="game.js"></script>
+</html>
