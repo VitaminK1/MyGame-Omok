@@ -1,6 +1,9 @@
 벤처창업 웹프로그래밍 II 중간과제
 ========================
 
+# Link
+https://vitamink1.github.io/MyGame-Omok/
+
 # Description
 
 흑과 백이 겨뤄, 5개의 돌을 먼저 잇는 플레이어가 이기는 게임을 구현다.
